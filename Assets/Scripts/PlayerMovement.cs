@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public bool alive = true;
     public float speed = 10f;
     public float horizontalMultiplier = 1.3f;
+    public float speedIncreasePerPoint = 0.05f;
     // GetComponent<Rigidbody> playerRigidbody;
 
     // Start is called before the first frame update
