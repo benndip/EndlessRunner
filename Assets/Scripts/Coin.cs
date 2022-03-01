@@ -17,7 +17,7 @@ public class Coin : MonoBehaviour
         transform.Rotate(0, 0, turnSpeed * Time.deltaTime);
     }
 
-    /// OnTriggerEnter is called when the Collider other enters the trigger.
+    /// OnTriggerEnter is called when the other Collider enters the trigger.
     /// The other Collider involved in this collision.
     void OnTriggerEnter(Collider other)
     {
