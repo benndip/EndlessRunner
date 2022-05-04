@@ -11,14 +11,15 @@ public class PlayerMovement : MonoBehaviour
     public float speedIncreasePerPoint = 0.05f;
     public Rigidbody rb;
     public float jumpForce = 300f;
-    public bool canJump = false;
+    public bool canJump = true;
+    Animator animator;
 
     // GetComponent<Rigidbody> playerRigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         if(transform.position.y < 0){
             Die();
         }
+
     }
 
     public void FixedUpdate(){
@@ -47,12 +49,14 @@ public class PlayerMovement : MonoBehaviour
         if(Physics.Raycast(transform.position, Vector3.down, out hit, 0.5f))
         {
             canJump = true;
+            animator.SetBool("isJumping", false);
         }
         
         if (canJump && Input.GetKeyDown("space"))
         {
             canJump = false;
             GetComponent<Rigidbody>().AddForce(0, jumpForce, 0);
+            animator.SetBool("isJumping", true);
         }
 
 

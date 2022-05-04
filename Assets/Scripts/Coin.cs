@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public float turnSpeed = 90f;
+    public float turnSpeed = 95f;
     // Start is called before the first frame update
     void Start()
     {

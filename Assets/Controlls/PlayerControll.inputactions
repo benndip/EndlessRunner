@@ -1,0 +1,33 @@
+{
+    "name": "PlayerControll",
+    "maps": [
+        {
+            "name": "Controls",
+            "id": "8e56825d-34ba-42cf-9925-bf6c681441d3",
+            "actions": [
+                {
+                    "name": "Jump",
+                    "type": "Value",
+                    "id": "8b7afd67-c8e7-4a1e-9be4-d62433e05c4c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "994183d4-498c-4116-9525-ada085c9ba11",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
